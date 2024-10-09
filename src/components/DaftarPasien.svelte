@@ -1,6 +1,11 @@
 <script>
-  const tableHeader = ["Nama", "Rekam Medis", "NIK", "Tanggal Lahir", "Jenis Kelamin", "Pendidikan", "Status"]
+  // import * as data from '$lib/data/DaftarPasien.json';
+  
+  const tableHeader = ["Nama", "Rekam Medis", "NIK", "Tanggal Lahir", "Jenis Kelamin", "Pendidikan", "Status"];
   const tableHeading = ["nama", "rekam_medis", "nik", "tgl_lahir", "jenis_kelamin", "pendidikan", "status"];
+
+  // let tableData = data;
+
   let tableData = [
     {
       "nama": "Santoso Ibadul Alim",
@@ -121,7 +126,7 @@
     </div>
 
     <div class="tombol-tambah col-end-11">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-auto w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">+ Tambah</button>
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</button>
     </div>
   </div>
 

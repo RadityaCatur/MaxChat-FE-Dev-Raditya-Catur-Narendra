@@ -1,0 +1,92 @@
+[
+    {
+      "nama": "Santoso Ibadul Alim",
+      "rekam_medis": "17200001",
+      "nik": "3522009010001",
+      "tgl_lahir": "1998-02-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Agus Jatmiko",
+      "rekam_medis": "17200002",
+      "nik": "3522009010002",
+      "tgl_lahir": "1993-08-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Suyati Shinka Amartha",
+      "rekam_medis": "17200003",
+      "nik": "3522009010003",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Perempuan",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Winda Kusmiati Aldianti",
+      "rekam_medis": "17200004",
+      "nik": "3522009010004",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Perempuan",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Ana Andriani",
+      "rekam_medis": "17200005",
+      "nik": "3522009010005",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Perempuan",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Sulaiman Hakam",
+      "rekam_medis": "17200006",
+      "nik": "3522009010006",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Dadang Sudana",
+      "rekam_medis": "17200007",
+      "nik": "3522009010007",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Indra Bachtiar",
+      "rekam_medis": "17200008",
+      "nik": "3522009010008",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Wardono",
+      "rekam_medis": "17200009",
+      "nik": "3522009010009",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Laki-laki",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    },
+    {
+      "nama": "Lia Sinta",
+      "rekam_medis": "17200010",
+      "nik": "3522009010010",
+      "tgl_lahir": "2001-07-10",
+      "jenis_kelamin": "Perempuan",
+      "pendidikan": "SLTA Sederajat",
+      "status": ""
+    }
+]
