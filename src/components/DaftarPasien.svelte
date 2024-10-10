@@ -129,7 +129,9 @@
     </div>
 
     <div class="tombol-tambah col-end-11">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-auto w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</button>
+      <a href="./tambah">
+        <button type="button"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-auto w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</button>
+      </a>
     </div>
   </div>
 
@@ -194,8 +196,6 @@
         </tbody>
     </table>
   </div>
-
-  <!-- <CariPasien/> -->
 </div>
 
 <style lang="postcss">
