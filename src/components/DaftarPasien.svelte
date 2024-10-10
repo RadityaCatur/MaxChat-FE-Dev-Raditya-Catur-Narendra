@@ -1,6 +1,7 @@
 <script>
   // import * as data from '$lib/data/DaftarPasien.json';
-  
+  import Modal from './modals/Modal.svelte';
+    
   const tableHeader = ["Nama", "Rekam Medis", "NIK", "Tanggal Lahir", "Jenis Kelamin", "Pendidikan", "Status"];
   const tableHeading = ["nama", "rekam_medis", "nik", "tgl_lahir", "jenis_kelamin", "pendidikan", "status"];
 
@@ -98,6 +99,8 @@
       "status": ""
     }
   ]
+
+  let showModal = false;
 </script>
 
 <div class="container mx-auto my-auto px-20 py-10">
@@ -112,7 +115,7 @@
     </div>
 
     <div class="kolom-pencarian col-start-7 col-end-10">
-      <form>   
+      <button type="button" on:click={() => (showModal = true)} class="w-full">   
         <label for="search" class="text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -122,13 +125,43 @@
           </div>
           <input type="search" id="default-search" class="block p-4 ps-10 w-full h-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari" required />
         </div>
-      </form>
+      </button>
     </div>
 
     <div class="tombol-tambah col-end-11">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</button>
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-auto w-full h-10 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</button>
     </div>
   </div>
+
+  <Modal bind:showModal>
+    <!-- Modal content -->
+    <div class="relative bg-white rounded shadow dark:bg-gray-700">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-l font-semibold text-gray-900 dark:text-white">
+              Pencarian
+          </h3>
+      </div>
+      <!-- Modal body -->
+      <div class="p-4 md:p-5">
+          <form class="space-y-4" action="#">
+              <div class="flex">
+                  <label for="nama" class="block basis-1/4 my-auto mr-5 text-sm font-medium text-gray-800 dark:text-white">Nama</label>
+                  <input type="text" name="nama" id="nama" class="basis-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"/>
+              </div>
+              <div class="flex">
+                <label for="nik" class="block basis-1/4 my-auto mr-5 text-sm font-medium text-gray-800 dark:text-white">NIK</label>
+                <input type="text" name="nik" id="nik" class="basis-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"/>
+              </div>
+              <div class="flex">
+                <label for="rekam_medis" class="block basis-1/4 my-auto mr-5 text-sm font-medium text-gray-800 dark:text-white">Rekam Medis</label>
+                <input type="text" name="rekam_medis" id="rekam_medis" class="basis-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"/>
+              </div>
+              <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cari Data</button>
+          </form>
+      </div>
+    </div>
+  </Modal>
 
   <div class="data-section relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -161,6 +194,8 @@
         </tbody>
     </table>
   </div>
+
+  <!-- <CariPasien/> -->
 </div>
 
 <style lang="postcss">
