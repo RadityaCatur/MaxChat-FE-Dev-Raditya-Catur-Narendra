@@ -101,6 +101,11 @@
   ]
 
   let showModal = false;
+
+  let searchPasien = tableData.map((pasien) => ({
+    ...pasien,
+    searchPasien: '${pasien.nama}, ${pasien.rekam_medis}, ${pasien.nik}'
+  }));
 </script>
 
 <div class="container mx-auto my-auto px-20 py-10">
